@@ -2,9 +2,7 @@
 Modern High-Throughput Event-Driven Rewards Microservice Framework.
 
 ### 🔗 Public Deployment Environment Links
-* **Interactive Client Dashboard:** [👉 ACCESS LIVE UI (VERCEL)]( INSERT_YOUR_VERCEL_LINK_HERE )
-* **Core API Swagger Playground:** [👉 ACCESS INTERACTIVE SWAGGER (AWS)]( INSERT_YOUR_AWS_SWAGGER_URL_HERE )
-
+* Live Client Dashboard:** 👉  https://enterprise-rewards-system.vercel.app/
 ---
 
 ## 🏗️ Architectural Overview & Design Trade-offs
