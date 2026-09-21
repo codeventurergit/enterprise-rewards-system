@@ -98,8 +98,8 @@ Follow these clean steps to clone, compile, and execute the multi-layered system
 
 ### ⚙️ 1. Clone the Codebase
 ```bash
-git clone https://github.com
-cd YOUR_REPO_NAME
+git clone https://github.com/codeventurergit/enterprise-rewards-system.git
+cd enterprise-rewards-system
 ```
 
 ### ☕ 2. Initialize the Backend Engine
