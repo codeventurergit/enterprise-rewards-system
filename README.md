@@ -116,4 +116,4 @@ cd frontend
 npm install
 npm run dev
 ```
-* Boot up the generated local localhost address displayed inside your shell environment to interact with the responsive balance counter panel view.
+* * Open your browser to **`http://localhost:5173`** to interact with the responsive UI.
