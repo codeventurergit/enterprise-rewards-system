@@ -2,7 +2,7 @@
 Modern High-Throughput Event-Driven Rewards Microservice Framework.
 
 ### 🔗 Public Deployment Environment Links
-* **Client Dashboard: https://enterprise-rewards-system.vercel.app/ 
+**Client Dashboard: https://enterprise-rewards-system.vercel.app/ 
 ---
 
 ## 🏗️ Architectural Overview & Design Trade-offs
