@@ -24,7 +24,7 @@ export default function App(): React.JSX.Element {
   const [status, setStatus] = useState<StatusState>({ type: 'idle', message: '' });
   const [showLedger, setShowLedger] = useState<boolean>(false);
 
-  // Definitive Guide Reference Data Setup
+  // Definitive Guide Reference Data Setup (\$120 = 90 points)
   const mockTransactions: MockTransaction[] = [
     { id: 'TX-401', date: 'Aug 14, 2026', amount: 120.00, type: 'PURCHASE', pointsEarned: 90 },
     { id: 'TX-309', date: 'Jul 28, 2026', amount: 75.50, type: 'PURCHASE', pointsEarned: 25 },
@@ -66,7 +66,7 @@ export default function App(): React.JSX.Element {
       setStatus({ type: 'sandbox', message: '🧠 Cloud Edge Safe Mode: Executing single-pass StandardBracketedStrategy optimizations...' });
       
       setTimeout(() => {
-        // Enforce integer truncation to safely strip fractional values permanently
+        // Enforce safe truncation to force absolute whole integer point balances
         const aggregatePoints = Math.trunc(90 + 25 + 0); 
         setCurrentBalance(aggregatePoints); 
         setStatus({ type: 'complete', message: '✨ Real-time ledger audit synchronized successfully. Write-through cache updated.' });
@@ -128,7 +128,7 @@ export default function App(): React.JSX.Element {
                 <span style={{ fontSize: '14px', fontWeight: '600', color: '#6b7280', textTransform: 'uppercase' }}>Points</span>
               </h2>
             </div>
-            <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(16,185,129,0.1)', display: 'flex', alignItems: 'center', justifyAll: 'center', justifyContent: 'center', color: '#10b981', fontSize: '20px', fontWeight: '700' }}>
+            <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(16,185,129,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#10b981', fontSize: '20px', fontWeight: '700' }}>
               ★
             </div>
           </div>
