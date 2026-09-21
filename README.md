@@ -116,4 +116,4 @@ cd frontend
 npm install
 npm run dev
 ```
-* * Open your browser to **`http://localhost:5173`** to interact with the responsive UI.
+Open your browser to **`http://localhost:5173`** to interact with the responsive UI.
