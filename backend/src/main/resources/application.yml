@@ -6,6 +6,7 @@ spring:
       - io.awspring.cloud.autoconfigure.sqs.SqsAutoConfiguration
       - io.awspring.cloud.autoconfigure.core.CredentialsAutoConfiguration
       - io.awspring.cloud.autoconfigure.core.RegionProviderAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
   datasource:
     url: jdbc:h2:mem:rewardsdb;DB_CLOSE_DELAY=-1
     driver-class-name: org.h2.Driver
