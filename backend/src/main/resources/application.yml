@@ -1,39 +1,21 @@
 spring:
   profiles:
-    active: local # Defaults to local out-of-the-box running on an independent clone
-
----
-spring:
-  config:
-    activate:
-      on-profile: local
+    active: local
+  autoconfigure:
+    exclude:
+      - io.awspring.cloud.autoconfigure.sqs.SqsAutoConfiguration
+      - io.awspring.cloud.autoconfigure.core.CredentialsAutoConfiguration
+      - io.awspring.cloud.autoconfigure.core.RegionProviderAutoConfiguration
   datasource:
     url: jdbc:h2:mem:rewardsdb;DB_CLOSE_DELAY=-1
     driver-class-name: org.h2.Driver
-    username: sa
-    password: 
-  h2:
-    console:
-      enabled: true
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-    show-sql: false
-  cache:
-    type: simple # Fallback to localized in-memory JVM cache abstraction 24/7
-
----
-spring:
-  config:
-    activate:
-      on-profile: aws
-  datasource:
-    url: ${DB_URL}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
-  cache:
-    type: redis
   data:
     redis:
-      host: ${REDIS_HOST:localhost}
-      port: 6379
+      repositories:
+        enabled: false
+  cache:
+    type: none
